@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBlogRest.Views.UserViews.UserDetailPage"
+             Title="{Binding Title}">
+    <ScrollView>
+        <StackLayout Spacing="5" Padding="2">
+            <Label Text="Name:" FontSize="Default" FontAttributes="Bold" />
+            <Label Text="{Binding User.Name}" FontSize="Small"/>
+            <Label Text="Email:" FontSize="Default" FontAttributes="Bold" />
+            <Label Text="{Binding User.Email}" FontSize="Small"/>
+            <Label Text="Street:" FontSize="Default" FontAttributes="Bold" />
+            <Label Text="{Binding User.Address_Street}" FontSize="Small"/>
+            <Label Text="Suite:" FontSize="Default" FontAttributes="Bold" />
+            <Label Text="{Binding User.Address_Suite}" FontSize="Small"/>
+            <Label Text="City:" FontSize="Default" FontAttributes="Bold" />
+            <Label Text="{Binding User.Address_City}" FontSize="Small"/>
+            <Label Text="Zipcode:" FontSize="Default" FontAttributes="Bold" />
+            <Label Text="{Binding User.Address_Zipcode}" FontSize="Small"/>
+            <Label Text="Lat:" FontSize="Default" FontAttributes="Bold" />
+            <Label Text="{Binding User.Address_Geo_Lat}" FontSize="Small"/>
+            <Label Text="Lng:" FontSize="Default" FontAttributes="Bold" />
+            <Label Text="{Binding User.Address_Geo_Lng}" FontSize="Small"/>
+            <Label Text="Phone:" FontSize="Default" FontAttributes="Bold" />
+            <Label Text="{Binding User.Phone}" FontSize="Small"/>
+            <Label Text="Website:" FontSize="Default" FontAttributes="Bold" />
+            <Label Text="{Binding User.Website}" FontSize="Small"/>
+            <Label Text="Company Name:" FontSize="Default" FontAttributes="Bold" />
+            <Label Text="{Binding User.Company_Name}" FontSize="Small"/>
+            <Label Text="Company Catch Phrase:" FontSize="Default" FontAttributes="Bold" />
+            <Label Text="{Binding User.Company_CatchPhrase}" FontSize="Small"/>
+            <Label Text="Company Bs:" FontSize="Default" FontAttributes="Bold" />
+            <Label Text="{Binding User.Company_Bs}" FontSize="Small"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
