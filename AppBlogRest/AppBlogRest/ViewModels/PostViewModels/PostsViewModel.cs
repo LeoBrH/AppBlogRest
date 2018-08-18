@@ -67,10 +67,8 @@ namespace AppBlogRest.ViewModels.PostViewModels
                     User user = userRepository.Find(post.UserId);
                     if (user == null)
                     {
-                        RestService<User> restServiceUser = new RestService<User>();
-                        List<User> users = await restServiceUser.GetAsync("User", post.UserId);
-                        if (users.Count > 0)
-                            userRepository.Add(users[0]);
+                        UserViewModels.UsersViewModel userViewModel = new UserViewModels.UsersViewModel();
+                        await userViewModel.ImportUser(post.UserId);
                     }
                     postRespository.Add(post);
                     adicionados++;
